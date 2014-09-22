@@ -10,7 +10,7 @@ if "%answer%"=="Y" goto doIt
 goto :EOF
 
 :doIt
-xcopy . "%USERPROFILE%" /EXCLUDE:excludes.txt /s /i /e /y /c
+xcopy . "%USERPROFILE%" /EXCLUDE:excludes.txt /s /i /e /y /c /h /q
 
 reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun /d """%UserProfile%\.bashrc.bat""" /f
 goto :EOF
