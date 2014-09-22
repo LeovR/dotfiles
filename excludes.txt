@@ -3,3 +3,4 @@ sync.bat
 excludes.txt
 README.md
 LICENSE
+.gitignore
