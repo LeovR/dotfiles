@@ -3,3 +3,5 @@ excludes.txt
 README.md
 LICENSE
 .gitignore
+.gitattribute
+.git\
