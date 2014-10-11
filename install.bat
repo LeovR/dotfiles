@@ -4,7 +4,7 @@ cinst clink
 cinst sudo
 cinst git
 
-set PATH=%PATH%;%programfiles(x86)%\Git\cmd\
+IF "%PROCESSOR_ARCHITECTURE%"=="x86" (set PATH=%PATH%;%programfiles%\Git\cmd\) else (set PATH=%PATH%;%programfiles(x86)%\Git\cmd\)
 
 cd /D %USERPROFILE%\Documents
 if not exist GitHub mkdir GitHub
