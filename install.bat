@@ -5,6 +5,9 @@ cinst sudo
 
 IF "%PROCESSOR_ARCHITECTURE%"=="x86" (set PATH=%PATH%;%programfiles%\Git\cmd\) else (set PATH=%PATH%;%programfiles(x86)%\Git\cmd\)
 
+@powershell iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+set PATH=%PATH%;%LOCALAPPDATA%\scoop\shims\
+
 cd /D %USERPROFILE%\Documents
 if not exist GitHub mkdir GitHub
 cd GitHub
