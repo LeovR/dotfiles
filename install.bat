@@ -8,6 +8,11 @@ IF "%PROCESSOR_ARCHITECTURE%"=="x86" (set PATH=%PATH%;%programfiles%\Git\cmd\) e
 @powershell iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 set PATH=%PATH%;%LOCALAPPDATA%\scoop\shims\
 
+scoop install concfg
+concfg import -n solarized
+@powershell concfg import -n solarized
+sudo concfg clean
+
 cd /D %USERPROFILE%\Documents
 if not exist GitHub mkdir GitHub
 cd GitHub
