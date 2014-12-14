@@ -7,6 +7,19 @@
 		"JSLint",
 		"LineEndings",
 		"Markdown Preview",
-		"SublimeLinter"
+		"SublimeLinter",
+		"Bootstrap 3 Snippets",
+		"CodeFormatter",
+		"EditorConfig",
+		"Gradle_Language",
+		"HTML-CSS-JS Prettify",
+		"LESS",
+		"Phpcs",
+		"Puppet",
+		"RawLineEdit",
+		"Sass",
+		"SublimeLinter",
+		"SublimeLinter-php",
+		"Vagrant"
 	]
 }
