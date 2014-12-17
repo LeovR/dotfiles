@@ -3,3 +3,5 @@
 [user]
 	email = jan.marten@gmx.de
 	name = Jan Marten
+[core]
+	autocrlf = true
